@@ -7,11 +7,12 @@ $hover-color: .5px .5px 12px #ccc;
   box-sizing: border-box;
   font-family: sans-serif;
 }
-
+// index code
 .blog-container {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  max-width: 1200px;
 }
 
 .blog-box {
@@ -55,3 +56,19 @@ $hover-color: .5px .5px 12px #ccc;
     }
   }
 }
+// blog pages
+.container {
+  max-width: 1200px;
+
+  .blog-body {
+    color: $font-color;
+    padding: 0 20px;
+  }
+}
+// .jumbotron {
+//   background-image: url(https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=2400&h=600);
+//   height: 300px;
+//   margin: 0 !important;
+//   padding: 0 !important;
+//   width: 100% !important;
+// }
