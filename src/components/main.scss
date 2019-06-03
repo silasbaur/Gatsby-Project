@@ -1,4 +1,4 @@
-$card-bg: #f1f3f4;
+$card-bg: #f1f3f5;
 $font-color: #333333;
 $p-color: #777777;
 $hover-color: .5px .5px 12px #ccc;
@@ -22,11 +22,13 @@ $hover-color: .5px .5px 12px #ccc;
   max-width: 350px;
   max-height: 375px;
   text-decoration: none;
+  overflow: hidden;
 
   img {
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 10px;
+    max-height: 250px
   }
  
   .blog-box-text {
@@ -41,6 +43,15 @@ $hover-color: .5px .5px 12px #ccc;
   }
   &:hover {
     box-shadow: $hover-color;
-    transition: 1s ease;
+    opacity: .9;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+
+    img {
+      overflow: hidden;
+      transform: scale(1.02);
+      transition: 0.4s ease-in-out;
+      -webkit-transition: 0.4s ease-in-out;
+    }
   }
 }
