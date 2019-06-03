@@ -1,3 +1,8 @@
+$card-bg: #f1f3f4;
+$font-color: #333333;
+$p-color: #777777;
+$hover-color: .5px .5px 10px #ccc;
+
 * {
   box-sizing: border-box;
   font-family: sans-serif;
@@ -10,7 +15,7 @@
 }
 
 .blog-box {
-  background-color: #f1f3f4;
+  background-color: $card-bg;
   border-radius: 4px;
   display: block;
   margin:10px;
@@ -25,17 +30,17 @@
   }
  
   .blog-box-text {
-    color: #333;
+    color: $font-color;
     text-align: center;
     line-height: .25rem;
 
     p {
-      color: #777;
+      color: $p-color;
       font-size: 16px;
     }
   }
   &:hover {
-    box-shadow: .5px .5px 10px #ccc;
+    box-shadow: $hover-color;
     transition: 1s ease;
   }
 }
