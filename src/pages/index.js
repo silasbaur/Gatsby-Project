@@ -11,7 +11,7 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Check this shit out!</p>
     <div class="blog-container"> 
-        <a href="/blog-1/" class="blog-box">
+        <a href="" class="blog-box">
           <img src="https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600" alt="blog-image" />
           <div class="blog-box-text">
             <h3>Lorem Ipsum</h3>

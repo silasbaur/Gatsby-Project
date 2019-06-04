@@ -1,3 +1,4 @@
+console.log(`${__dirname}/data/articles`);
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -7,14 +8,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
 
-    // {
-    //   resolve: `gatsby-plugin-sass`,
-    //   options: {
-    //     cssLoaderOptions: {
-    //       camelCase: false,
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/data/articles`,
+        name: "markdown-pages",
+      },
+    },
+    `gatsby-transformer-remark`,
     
     `gatsby-plugin-react-helmet`,
     {
