@@ -2,9 +2,9 @@
 slug: "/articles/lorem-ipsum"
 date: "2019-06-01"
 title: "My first blog post"
+image: "https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600"
 ---
 
-## Lorem Ipsum
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla lectus nisi, hendrerit condimentum lorem non, interdum ultricies metus. Donec eget enim at quam hendrerit feugiat id a ante. Aliquam erat volutpat. Vestibulum interdum vehicula quam sed viverra. Maecenas eu ipsum nisl. Praesent sit amet sapien eget magna semper auctor. Sed nec fringilla ex. Aenean ultrices condimentum massa, ut dictum massa mattis sed. In ac arcu nunc. Mauris consectetur egestas arcu, et posuere sem gravida non.
 
