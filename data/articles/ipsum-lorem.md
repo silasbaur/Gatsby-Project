@@ -1,8 +1,8 @@
 ---
-slug: "/articles/lorem-ipsum"
-date: "2019-05-02"
-title: "Lorem Ipsum"
-image: "https://images.unsplash.com/photo-1559250543-36c18ccff71d?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/hood-disciple"
+date: "2019-06-04"
+title: "Hood Disciple"
+image: "https://images.unsplash.com/photo-1559211227-36c5282ae4d1?auto=format&fit=crop&w=800&h=600"
 ---
 
 

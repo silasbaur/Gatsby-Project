@@ -1,8 +1,8 @@
 ---
-slug: "/articles/lorem-ipsum"
-date: "2019-05-02"
-title: "Lorem Ipsum"
-image: "https://images.unsplash.com/photo-1559250543-36c18ccff71d?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/barbarian-eternal"
+date: "2019-05-29"
+title: "Barbarian Eternal"
+image: "https://images.unsplash.com/photo-1559251333-cf8a2d868744?auto=format&fit=crop&w=800&h=600"
 ---
 
 

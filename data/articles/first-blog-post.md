@@ -1,8 +1,8 @@
 ---
-slug: "/articles/lorem-ipsum"
-date: "2019-05-02"
-title: "Lorem Ipsum"
-image: "https://images.unsplash.com/photo-1559250543-36c18ccff71d?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/first-blog-post"
+date: "2019-05-01"
+title: "My first blog post"
+image: "https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600"
 ---
 
 

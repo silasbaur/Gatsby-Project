@@ -1,8 +1,8 @@
 ---
-slug: "/articles/lorem-ipsum"
-date: "2019-05-02"
-title: "Lorem Ipsum"
-image: "https://images.unsplash.com/photo-1559250543-36c18ccff71d?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/caution-ramen"
+date: "2019-05-09"
+title: "Caution Ramen"
+image: "https://images.unsplash.com/photo-1559163304-2bd8f8600164?auto=format&fit=crop&w=800&h=600"
 ---
 
 
