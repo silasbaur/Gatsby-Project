@@ -1,11 +1,19 @@
 $card-bg: #f1f3f5;
 $font-color: #333333;
+$font-white: #f1f3f5;
 $p-color: #777777;
 $hover-color: .5px .5px 12px #ccc;
 
 * {
   box-sizing: border-box;
   font-family: sans-serif;
+}
+
+.wrapper {
+  margin: auto;
+  max-width: 1200;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
 }
 // index code
 .blog-container {
@@ -65,10 +73,19 @@ $hover-color: .5px .5px 12px #ccc;
     padding: 0 20px;
   }
 }
-// .jumbotron {
-//   background-image: url(https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=2400&h=600);
-//   height: 300px;
-//   margin: 0 !important;
-//   padding: 0 !important;
-//   width: 100% !important;
-// }
+.jumbotron {
+  background-color: #7a7b8d;
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+
+  .jt-text {
+    color: $font-white;
+    line-height: .2rem;
+  }
+
+  .jt-img {
+    width: 50%;
+  }
+}
