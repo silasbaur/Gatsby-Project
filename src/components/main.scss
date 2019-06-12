@@ -10,10 +10,13 @@ $hover-color: .5px .5px 12px #ccc;
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin: auto;
-  max-width: 1200;
-  padding: 0px 1.0875rem 1.45rem;
-  padding-top: 0;
+  max-width: 1200px;
+  padding: 10px 1.0875rem 1.45rem;
+  
 }
 // index code
 .blog-container {
@@ -74,18 +77,27 @@ $hover-color: .5px .5px 12px #ccc;
   }
 }
 .jumbotron {
+  align-items: center;
   background-color: #7a7b8d;
   display: flex;
   padding: 10px;
   justify-content: space-evenly;
   margin: 0 auto;
+  vertical-align: middle;
 
-  .jt-text {
-    color: $font-white;
+  .jt-text a {
+    color: #fff;
     line-height: .2rem;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .jt-img {
-    width: 50%;
+   max-width: 300px;
+   max-height: 300px;
+   transform: rotate(15deg);
   }
 }

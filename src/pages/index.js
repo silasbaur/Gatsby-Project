@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import jtImg from '../images/astronaut.png'
+
 const IndexPage = ({data}) => {
   const { allMarkdownRemark } = data
   const articles = [];
@@ -26,21 +28,21 @@ const IndexPage = ({data}) => {
       <SEO title="Home" />
       <div className="jumbotron">
         <div className="jt-text">
-          <h2>Gatsby Article</h2>
-          <p>June 6, 2019</p>
+          <a href="">
+            <h2>Gatsby Article</h2>
+            <p>June 6, 2019</p>
+          </a>
         </div>
-        <div className="jt-img">
-          <img src="./images/gatsby-astronaut.png" alt="featured blog" />
-        </div>
+        <img className="jt-img" src={jtImg} alt="featured blog image" />
+        
       </div>
       <div className="wrapper">
-        <h1>Hi people</h1>
-        <p>Check this shit out!</p>
+        <div className="welcome-box">
+          <h1>Hi people</h1>
+          <p>Check this shit out!</p>
+        </div>
         <div className="blog-container"> 
           {articles}
-        </div>
-        <div style={{ maxWidth: `300px`, margin: `1.45rem 0` }}>
-          <Image />
         </div>
         <Link to="/page-2/">Go to page 2</Link>
       </div>
