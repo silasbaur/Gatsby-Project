@@ -1,8 +1,8 @@
 ---
-slug: "/articles/first-blog-post"
-date: "2019-03-01"
-title: "My first blog post"
-image: "https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/goofy-magic"
+date: "2019-05-19"
+title: "Goofy Magic"
+image: "https://images.unsplash.com/photo-1560178080-f59af0b0bb18?auto=format&fit=crop&w=800&h=600"
 ---
 
 

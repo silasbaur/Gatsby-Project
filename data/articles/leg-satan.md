@@ -1,8 +1,8 @@
 ---
-slug: "/articles/first-blog-post"
-date: "2019-03-01"
-title: "My first blog post"
-image: "https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/leg-satan"
+date: "2019-04-30"
+title: "Leg Satan"
+image: "https://images.unsplash.com/photo-1560201801-857328508f6f?auto=format&fit=crop&w=800&h=600"
 ---
 
 

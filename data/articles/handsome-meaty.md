@@ -1,8 +1,8 @@
 ---
-slug: "/articles/first-blog-post"
-date: "2019-03-01"
-title: "My first blog post"
-image: "https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/handsome-meaty"
+date: "2019-05-10"
+title: "Handsome Meaty"
+image: "https://images.unsplash.com/photo-1560073210-1eb8ea89d4cc?auto=format&fit=crop&w=800&h=600"
 ---
 
 

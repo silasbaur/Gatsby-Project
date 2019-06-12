@@ -1,8 +1,8 @@
 ---
-slug: "/articles/first-blog-post"
-date: "2019-03-01"
-title: "My first blog post"
-image: "https://images.unsplash.com/photo-1559311745-a57f6233488e?auto=format&fit=crop&w=800&h=600"
+slug: "/articles/governor-dust"
+date: "2019-04-10"
+title: "Governor Dust"
+image: "https://images.unsplash.com/photo-1560167016-022b78a0258e?auto=format&fit=crop&w=800&h=600"
 ---
 
 
