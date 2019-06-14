@@ -6,45 +6,64 @@ import SEO from "../components/seo"
 
 import jtImg from '../images/astronaut.png'
 
-const IndexPage = ({data}) => {
-  const { allMarkdownRemark } = data
-  const articles = [];
-  for (const edge of allMarkdownRemark.edges) {
-    articles.push((
-      <a href={edge.node.frontmatter.slug} className="blog-box" key={edge.node.frontmatter.slug}>
-        <img src={edge.node.frontmatter.image} alt="" />
-        <div className="blog-box-text">
-          <h3>{edge.node.frontmatter.title}</h3>
-          <p>{edge.node.frontmatter.date}</p>
-        </div>
-      </a>
-    ));
+class IndexPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      articles: [],
+      visible: 6
+    };
+
+    this.loadMore = this.loadMore.bind(this);
   }
 
-  return (
-    <Layout>
-      <SEO title="Home" />
-      <div className="jumbotron">
-        <div className="jt-text">
-          <a href="">
-            <h2>Gatsby Article</h2>
-            <p>June 6, 2019</p>
-          </a>
+  loadMore() {
+    this.setState((prev) => {
+      return {visible: prev.visible + 3};
+    });
+  }
+  render() {
+    const { allMarkdownRemark } = this.props.data
+
+    for (const edge of allMarkdownRemark.edges) {
+      this.state.articles.push((
+        <a href={edge.node.frontmatter.slug} className="blog-box" key={edge.node.frontmatter.slug}>
+          <img src={edge.node.frontmatter.image} alt="" />
+          <div className="blog-box-text">
+            <h3>{edge.node.frontmatter.title}</h3>
+            <p>{edge.node.frontmatter.date}</p>
+          </div>
+        </a>
+      ));
+    }
+
+    return (
+      <Layout>
+        <SEO title="Home" />
+        <div className="jumbotron">
+          <div className="jt-text">
+            <a href="">
+              <h2>Gatsby Article</h2>
+              <p>June 6, 2019</p>
+            </a>
+          </div>
+          <img className="jt-img" src={jtImg} alt="featured blog image" />
+
         </div>
-        <img className="jt-img" src={jtImg} alt="featured blog image" />
-        
-      </div>
-      <div className="wrapper">
-        <div className="welcome-box">
-          <h1>Hi people</h1>
-          <p>Check this shit out!</p>
+        <div className="wrapper">
+          <div className="welcome-box">
+            <h1>Hi people</h1>
+            <p>Check this shit out!</p>
+          </div>
+          <div className="blog-container">
+            {this.state.articles}
+            {this.state.visible < this.state.articles.length &&
+            <button onClick={this.loadMore} type="button" className="load-more">Load More</button> }
+          </div>
         </div>
-        <div className="blog-container"> 
-          {articles}
-        </div>
-      </div>
-    </Layout>
-  );
+      </Layout>
+    );
+  }
 }
 
 export const query = graphql`
