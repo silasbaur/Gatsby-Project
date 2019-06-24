@@ -11,22 +11,18 @@ class IndexPage extends React.Component {
     super(props);
     this.state = {
       articles: [],
+      articleCount: 0,
       visible: 6
     };
 
     this.loadMore = this.loadMore.bind(this);
   }
 
-  loadMore() {
-    this.setState((prev) => {
-      return {visible: prev.visible + 3};
-    });
-  }
-  render() {
-    const { allMarkdownRemark } = this.props.data
-
+  updateArticles() {
+    const { allMarkdownRemark } = this.props.data;
+    const articles = [];
     for (const edge of allMarkdownRemark.edges) {
-      this.state.articles.push((
+      articles.push((
         <a href={edge.node.frontmatter.slug} className="blog-box" key={edge.node.frontmatter.slug}>
           <img src={edge.node.frontmatter.image} alt="" />
           <div className="blog-box-text">
@@ -35,8 +31,28 @@ class IndexPage extends React.Component {
           </div>
         </a>
       ));
+      if (articles.length === this.state.visible) {
+        break;
+      }
     }
+    this.setState({ articles });
+  }
 
+  componentDidMount() {
+    this.updateArticles();
+    const { allMarkdownRemark } = this.props.data;
+    this.setState({ articleCount: allMarkdownRemark.edges.length });
+  }
+
+  loadMore() {
+    this.setState((prev) => {
+      return {visible: prev.visible + 3};
+    }, () => {
+      this.updateArticles();
+    });
+  }
+  
+  render() {
     return (
       <Layout>
         <SEO title="Home" />
@@ -57,7 +73,7 @@ class IndexPage extends React.Component {
           </div>
           <div className="blog-container">
             {this.state.articles}
-            {this.state.visible < this.state.articles.length &&
+            {this.state.visible < this.state.articleCount &&
             <button onClick={this.loadMore} type="button" className="load-more">Load More</button> }
           </div>
         </div>
