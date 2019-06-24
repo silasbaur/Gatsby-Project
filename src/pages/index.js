@@ -68,8 +68,8 @@ class IndexPage extends React.Component {
         </div>
         <div className="wrapper">
           <div className="welcome-box">
-            <h1>Hi people</h1>
-            <p>Check this shit out!</p>
+            <h1>Hello World</h1>
+            <p>Latest Articles</p>
           </div>
           <div className="blog-container">
             {this.state.articles}
