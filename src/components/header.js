@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `#00A388`,
+      background: `#FFFFFF`,
     }}
   >
     <div
@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `#333333`,
             textDecoration: `none`,
           }}
         >
@@ -27,6 +27,15 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
+    <nav>
+      <div className="nav-cat">
+        <a href="#">Latest Article</a>
+        <a href="#">Popular</a>
+        <a href="#">Tech</a>
+        <a href="#">Culture</a>
+        <a href="#">Product</a>
+      </div>
+    </nav>
   </header>
 )
 

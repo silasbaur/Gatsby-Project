@@ -19,6 +19,24 @@ $hover-color: .5px .5px 12px #ccc;
   padding: 10px 1.0875rem 1.45rem;
   
 }
+// header 
+
+nav {
+  .nav-cat {
+    background-color: $brand-color; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+
+    a {
+      text-decoration: none;
+      color: $font-white;
+      font-weight: 500;
+    }
+  }
+}
+
 // index code
 .welcome-box {
   p {
@@ -96,6 +114,7 @@ $hover-color: .5px .5px 12px #ccc;
   align-items: center;
   background-color: #7a7b8d;
   display: flex;
+  flex-direction: row;
   padding: 10px;
   justify-content: space-evenly;
   margin: 0 auto;
@@ -115,5 +134,9 @@ $hover-color: .5px .5px 12px #ccc;
    max-width: 300px;
    max-height: 300px;
    transform: rotate(15deg);
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
   }
 }

@@ -58,7 +58,7 @@ class IndexPage extends React.Component {
         <SEO title="Home" />
         <div className="jumbotron">
           <div className="jt-text">
-            <a href="">
+            <a href="#">
               <h2>Gatsby Article</h2>
               <p>June 6, 2019</p>
             </a>
