@@ -26,8 +26,8 @@ class IndexPage extends React.Component {
         <a href={edge.node.frontmatter.slug} className="blog-box" key={edge.node.frontmatter.slug}>
           <img src={edge.node.frontmatter.image} alt="" />
           <div className="blog-box-text">
-            <h3>{edge.node.frontmatter.title}</h3>
-            <p>{edge.node.frontmatter.date}</p>
+            <p className="blog-title">{edge.node.frontmatter.title}</p>
+            <p className="blog-date">{edge.node.frontmatter.date}</p>
           </div>
         </a>
       ));
@@ -59,7 +59,7 @@ class IndexPage extends React.Component {
         <div className="jumbotron">
           <div className="jt-text">
             <a href="#">
-              <h2>Gatsby Article</h2>
+              <h1 className="jt-title">Gatsby Article</h1>
               <p>June 6, 2019</p>
             </a>
           </div>
@@ -67,10 +67,6 @@ class IndexPage extends React.Component {
 
         </div>
         <div className="wrapper">
-          <div className="welcome-box">
-            <h1>Hello World</h1>
-            <p>Latest Articles</p>
-          </div>
           <div className="blog-container">
             {this.state.articles}
             {this.state.visible < this.state.articleCount &&

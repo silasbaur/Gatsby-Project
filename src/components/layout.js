@@ -28,7 +28,12 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
           <main>{children}</main>
-          <footer>
+          <footer
+          style={{
+            background: `#1d2b36`,
+            color: `white`,
+          }}
+          >
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>
