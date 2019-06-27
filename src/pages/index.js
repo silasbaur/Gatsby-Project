@@ -69,9 +69,9 @@ class IndexPage extends React.Component {
         <div className="wrapper">
           <div className="blog-container">
             {this.state.articles}
-            {this.state.visible < this.state.articleCount &&
-            <button onClick={this.loadMore} type="button" className="load-more">Load More</button> }
           </div>
+          {this.state.visible < this.state.articleCount &&
+            <button onClick={this.loadMore} type="button" className="load-more">Load More</button> }
         </div>
       </Layout>
     );

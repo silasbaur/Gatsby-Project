@@ -8,7 +8,7 @@ $box-shadow: 0 10px 15px -10px rgba(30,45,62,.21), 0 5px 40px -10px rgba(31,44,6
 
 * {
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: Graphik,Helvetica,Arial,sans-serif !important;
 }
 
 .wrapper {
@@ -16,7 +16,7 @@ $box-shadow: 0 10px 15px -10px rgba(30,45,62,.21), 0 5px 40px -10px rgba(31,44,6
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1280px;
   padding: 10px 1.0875rem 1.45rem;
   
 }
@@ -28,13 +28,14 @@ $box-shadow: 0 10px 15px -10px rgba(30,45,62,.21), 0 5px 40px -10px rgba(31,44,6
   flex-flow: row wrap;
   margin-top: 30px;
   max-width: 1200px;
+}
 
-  .load-more {
-    border: none;
-    cursor: pointer;
-    padding: 10px 15px;
-    margin-top: 30px;
-  }
+.load-more {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 30px;
+  background: none;
 }
 
 .blog-box {
@@ -42,7 +43,7 @@ $box-shadow: 0 10px 15px -10px rgba(30,45,62,.21), 0 5px 40px -10px rgba(31,44,6
   border-radius: 4px;
   display: block;
   margin: 10px;
-  max-width: 350px;
+  max-width: 400px;
   max-height: 375px;
   text-decoration: none;
   overflow: hidden;
@@ -108,8 +109,12 @@ $box-shadow: 0 10px 15px -10px rgba(30,45,62,.21), 0 5px 40px -10px rgba(31,44,6
     line-height: .2rem;
     text-decoration: none;
 
-    .jt-title:hover {
-      border-bottom: 2px solid $font-white;
+    .jt-title {
+      font-size: 44px;
+
+      &:hover {
+        border-bottom: 2px solid $font-white;
+      }
     }
 
     p {
