@@ -1,0 +1,39 @@
+.jumbotron {
+  align-items: center;
+  background-color: #7a7b8d;
+  display: flex;
+  flex-direction: row;
+  height: 450px;
+  padding: 10px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  vertical-align: middle;
+
+  .jt-text a {
+    color: $font-white;
+    line-height: .2rem;
+    text-decoration: none;
+
+    .jt-title {
+      font-size: 44px;
+
+      &:hover {
+        border-bottom: 2px solid $font-white;
+      }
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .jt-img {
+   max-width: 300px;
+   max-height: 300px;
+   transform: rotate(15deg);
+  }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+  }
+}

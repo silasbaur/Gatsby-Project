@@ -1,0 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1280px;
+  padding: 10px 1.0875rem 1.45rem;
+  
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  max-width: 1280px;
+}
+
+.load-more {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin-top: 30px;
+  background: none;
+}
+
