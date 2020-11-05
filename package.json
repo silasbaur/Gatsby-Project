@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Silas Baur <silasbaur@gmail.com>",
   "dependencies": {
+    "@netlify/plugin-lighthouse": "^1.4.2",
     "gatsby": "^2.7.5",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
